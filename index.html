@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .font-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .font-card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .font-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .font-preview {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Font Showcase</h1>
+        <p>Discover Beautiful Typography</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#fonts">Fonts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <main>
+        <section id="fonts">
+            <h2>Popular Fonts</h2>
+            <div class="font-grid">
+                <div class="font-card">
+                    <h3>Serif Font</h3>
+                    <p>Classic and elegant serif font style</p>
+                    <div class="font-preview" style="font-family: Georgia;">
+                        The Quick Brown Fox
+                    </div>
+                </div>
+                
+                <div class="font-card">
+                    <h3>Sans-Serif Font</h3>
+                    <p>Modern and clean sans-serif font style</p>
+                    <div class="font-preview" style="font-family: Verdana;">
+                        The Quick Brown Fox
+                    </div>
+                </div>
+                
+                <div class="font-card">
+                    <h3>Monospace Font</h3>
+                    <p>Perfect for code and technical content</p>
+                    <div class="font-preview" style="font-family: 'Courier New';">
+                        The Quick Brown Fox
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>About Fonts</h2>
+            <p>Typography is an essential aspect of web design. Choosing the right font can enhance readability and improve the overall user experience. This website showcases different font styles and their applications.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Font Showcase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
